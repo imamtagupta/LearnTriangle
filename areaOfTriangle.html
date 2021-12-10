@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>LearnTriangle</title>
+</head>
+<body>
+  <header>
+    <div id="logo">Learn with Triangles..</div>
+    <nav>
+      <a href="index.html">Is Triangle?</a>
+      <a href="hypotenuse.html">Hypotenuse</a>
+      <a href="areaOfTriangle.html">Area Of Triangle</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Angle of Triangles!</h2>
+    <form id="form" aria-autocomplete="off">
+        <div class="form-group">
+            <label>First Side</label>
+            <div>
+              <input type="number" id="first-side"/>  
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Second Side</label>
+            <div>
+              <input type="number" id="second-side"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Third Side </label>
+            <div>
+              <input type="number" id="third-side"/>
+            </div>
+          </div>
+      <div class="form-group btns">
+        <button id='calculate-area' type="button">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+      <div class="form-group">
+          <div>
+            <p type="text" id="output" style="margin : -2em 0 0 0 ;"></p>
+          </div>
+        </div>
+    </form>
+  </div>
+
+  <footer>© | 2021 | mamtagupta</footer>
+  <script src="script1.js"> </script>
+</body>
+</html>

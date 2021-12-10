@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family-Poppins");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html, body{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  
+}
+header{
+  width: 100%;
+  font-size: 1.4em;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FDFC47;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24FE41, #FDFC47); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#logo{
+  font-size:2em;
+  font-weight: bolder;
+  font-family: 'Lovers Quarrel', cursive;
+  color: #000;
+}
+nav{
+  display: flex;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.8em;
+}
+nav > a{
+  text-decoration: none;
+  list-style: none;
+  padding: 0 10px;
+  text-transform: capitalize;
+}
+
+footer{
+    font-size: 1.2em;
+    font-weight: bold;
+    position: fixed;
+    bottom: 1em;
+    left: 40%;
+    color: #799F0C;
+}
+
+.container{
+    padding: 1em;
+    width: 400px;
+    height: auto;
+    margin: auto;
+    border-radius: 5px;
+    background: #fff;
+  }
+  .container h2{
+    padding: .7em 1em;
+    font: bold normal 1.5em sans-serif;
+    width: 100%;
+    color: #465e02;
+  }
+  #form{
+    margin: 1.5em;
+    display: grid;
+    gap: 3.2em;
+  }
+  label, p{
+    font-size:1.2em;
+    font-weight: 600;
+  }
+  input{
+    width: 100%;
+    border: 2px solid #dbdbdb;
+    outline: none;
+    padding: .5em;
+    border-radius: 2px;
+    background: #fff;
+    font-size: 1em
+  }
+  button{
+    outline: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: .8em 0 .8em;
+    border-color: #799F0C;;
+    text-transform: uppercase;
+    color: #799F0C;;
+    background: #fff;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+  }
+  .form-group>div{
+    margin: 5px 0 10px;
+    position: relative;
+    width: inherit;
+  }
+  .form-group>div>input{
+    position: absolute;
+  }
+  .form-group i{
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    display: none;
+  }
+  
+  input:focus{
+    background: #fff;
+  }
+  
+
+@media(max-width:400px){
+
+  body{
+    position: relative;
+    height: 100vh;
+  }
+  header{
+    display: block;
+  }
+  nav{
+    position: absolute;
+    flex-direction: column;
+    top:10%;
+    left:-100px;
+    background-color: #ebdbf5;
+    transition: all 1s;
+    user-select:none;
+  }
+  #logo{
+    padding: 10px;
+    user-select:none;
+  }
+  li{
+    padding: 10px;
+  }
+  .active{
+    transform: translateX(100px);
+  }
+}
